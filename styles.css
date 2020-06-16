@@ -1,0 +1,448 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+/* Navbar Animation */
+
+@keyframes navbar {
+    0% {margin-top: -10vh}
+    100% {margin-top: 0vh}
+}
+
+/* For Navbar */
+
+.navbar {
+    margin-top: 0vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    z-index: 500;
+    animation-name: navbar;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,1,0,1);
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 15%;
+}
+.logo {
+    flex: 1 1 auto;
+    margin-left: 210px;
+    text-transform: uppercase;
+}
+.nav-link {
+    margin: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.logo-image {
+    width: 50px;
+    margin-left: 100px;
+}
+
+.nav-mobile {
+    z-index: 502;
+    height: 70px;
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: black;
+    flex-direction: row;
+}
+
+.nav-link-mobile {
+    padding-right: 40px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+}
+
+.nav-link-mobile:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Menu Media Query */
+
+@media screen and (min-width: 959px) {
+    .nav-mobile {
+        display: none;
+    }
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 958px) {
+    .navbar {
+        height: 100px;
+        justify-content: center;
+        width: device-width;
+    }
+    .nav {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:980px) {
+    .nav-link-mobile {
+        font-size: 20px;
+    }
+}
+
+/* Landing Page */
+
+.landing-page-section {
+    margin-top: -100vh;
+    height: 100vh;
+    width: -webkit-fill-available;
+    background-image: url(Images/Background.svg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    overflow: hidden;
+    animation-name: landing-page-background;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+/* Landing Page Background Opacity Animation */
+
+@keyframes landing-page-background {
+    0% {opacity: .8}
+    100% {opacity: 1}
+}
+
+/* Logo Animation */
+
+@keyframes logo-half-1 {
+    0% {opacity: 0; margin-top: -25vh;}
+    100% {opacity: .3; margin-top: 0vh;}
+}
+
+@keyframes logo-half-2 {
+    0% {opacity: 0; margin-top: 25vh}
+    100% {opacity: .3; margin-bottom: 0vh}
+}
+
+.landing-page-logo-background-half-1 {
+    opacity: .3;
+    width: 700px;
+    animation-name: logo-half-1;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,.75,0,1);
+    position: absolute;
+}
+
+.landing-page-logo-background-half-2 {
+    opacity: .3;
+    width: 700px;
+    animation-name: logo-half-2;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,.75,0,1);
+    position: absolute;
+}
+
+.landing-page-heading {
+    font-size: 40px;
+    text-align: left;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 0 20px #000;
+}
+
+/* Animation */
+
+@keyframes landingpage {
+    0% {opacity: 0; margin-top: 10vh}
+    100% {opacity: 1; margin-top: 3vh}
+}
+
+.landing-page-heading-container-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-page-heading-container {
+    margin-top: 3vh;
+    opacity: 1;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation-name: landingpage;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,.75,.06,.99);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.landing-page-socials {
+    width: 50px;
+    padding: 15px;
+    -webkit-filter: drop-shadow(0px 0px 5px #222);
+    filter: drop-shadow(0px 0px 5px #222);
+}
+
+.footer {
+    width: 100vh;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* Media Query Footer */
+
+@media screen and (max-width: 600px) {
+    .footer-container {
+        margin-left: -15vh;
+    }
+}
+
+.footer-container{
+    margin-top: 5vh;
+    width: 100vh;
+    display: flex;
+}
+
+.footer-logo {
+    margin-top: 2vh;
+    width: 90px;
+    margin-left: 15vh;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: left;
+    justify-content: left;  
+}
+
+.footer-nav-heading {
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+.footer-nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 600px) {
+    .landing-page-heading-container {
+        margin-left: 35px;
+    }
+    .landing-page-logo-background {
+        display: hidden;
+    }
+}
+
+/* Shop */
+
+.shop {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation-name: shop;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0,.75,0,1);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.shop-heading {
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+}
+
+.shop-paragraph {
+    font-size: 25px;
+}
+
+/* Twitter Profile */
+
+.twitter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.twitter-img {
+    width: 70px;
+    border-radius: 100px;
+}
+
+.twitter-profile {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    margin-right: 3vh; 
+    margin-left: 3vh;
+}
+
+.twitter-name {
+    font-weight: 600;
+    text-align: left;
+    font-size: 30px;
+}
+
+.twitter-username {
+    font-weight: 400;
+    text-align: left;
+    font-size: 20px;
+}
+
+.twitter-follow-btn {
+    background-color: #00B1FF;
+    border-radius: 1000px;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0px 0px 15px #cfcfcf;
+    text-decoration: none;
+    color: #fff;
+}
+
+.twitter-follow-btn:hover {
+    background-color: #fff;
+    color: #00B1FF;
+}
+
+.twitter-follow-btn-text {
+
+}
+
+.twitter-follow-btn-text:hover {
+    color: #00B1FF;
+}
+
+/* Shop Animation */
+
+@keyframes shop {
+    0% {opacity: .2; margin-top: 5vh}
+    100% {opacity: 1; margin-top: 0vh}
+}
+
+/* Contact Page */
+
+.contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Contact Animaiton */
+
+@keyframes contact {
+        0% {opacity: .1; margin-top: 30vh}
+        100% {opacity: 1; margin-top: 23vh}
+}
+
+.contact-info {
+    margin-top: 23vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation-name: contact;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,.75,0,1);
+}
+
+.contact-info-heading {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.contact-info-paragraph {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email], select, _replyto {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #404040;
+}
