@@ -466,6 +466,11 @@ input[type=submit]:hover {
     100% {opacity: 1; margin-left: 7%;}
 }
 
+@keyframes information-mobile {
+    0% {opacity: .3; margin-left: -5%}
+    100% {opacity: 1; margin-left: 0%;}
+}
+
 @keyframes partners {
     0% {opacity: .3; margin-top: -80vh;}
     100% {opacity: 1; margin-top: -100vh;}
@@ -513,6 +518,26 @@ input[type=submit]:hover {
 .partners-paragraph {
     font-size: 20px;
     text-align: center;
+}
+
+/* Information Media Query */
+
+@media screen and (max-width: 980px)  {
+    .partners-information-section {
+        margin-left: 0%;
+        justify-content: center;
+        position: relative;
+        bottom: 200px;
+        animation-name: information-mobile;
+    }
+}
+
+/* Partners Media Query */
+
+@media screen and (max-width: 980px) {
+    .partners-container {
+        margin-top: 10vh;
+    }
 }
 
 .page-information-container {
