@@ -446,3 +446,87 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #404040;
 }
+
+/* Partners */
+
+.partners-information-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-left: 7%;
+    animation-name: information;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,.75,0,1);
+}
+
+/* Partners Animation */
+
+@keyframes information {
+    0% {opacity: .3; margin-left: -0%}
+    100% {opacity: 1; margin-left: 7%;}
+}
+
+@keyframes partners {
+    0% {opacity: .3; margin-top: -80vh;}
+    100% {opacity: 1; margin-top: -100vh;}
+}
+
+.partners-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100vh;
+    animation-name: partners;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,.75,0,1);
+}
+
+.partners-arma {
+    width: 250px;
+    justify-content: center;
+}
+
+.partners-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.partners-heading {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.partners-link {
+    color: #262626;
+}
+
+.partners-link:hover {
+    color: #525252;
+}
+
+.partners-paragraph {
+    font-size: 20px;
+    text-align: center;
+}
+
+.page-information-container {
+    display: flex;  
+    float: left;
+    align-items: left;
+    flex-direction: column;
+}
+
+.page-heading {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.page-paragraph {
+    font-size: 15px;
+}
