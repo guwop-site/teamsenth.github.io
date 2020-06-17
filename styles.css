@@ -6,7 +6,6 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
-    width: 100% !important;
     overflow-x: hidden !important;
     overflow-y: visible;
 }
@@ -77,8 +76,8 @@ body {
     color: black;
     flex-direction: row;
     text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left:25px;
+    margin-right: 25px;
 }
 
 .nav-link-mobile {
@@ -95,7 +94,7 @@ body {
 
 /* Mobile Menu Media Query */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 980px) {
     .nav-mobile {
         display: none;
     }
@@ -103,10 +102,10 @@ body {
 
 /* Media Query */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 980px) {
     .navbar {
         height: 100px;
-        justify-content: center;
+        justify-content: center; 
         width: device-width;
     }
     .nav {
@@ -134,7 +133,7 @@ body {
     display: flex;
     align-items: center;    
     justify-content: center;
-    overflow: hidden;
+    overflow: hidden !important;
     animation-name: landing-page-background;
     animation-duration: 1s;
     animation-timing-function: ease;
@@ -175,6 +174,17 @@ body {
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0,.75,0,1);
     position: absolute;
+}
+
+/* Landing Page Background Media Query */
+
+@media screen and (max-width: 980px) {
+    .landing-page-logo-background-half-1 {
+        width: 400px;
+    }
+    .landing-page-logo-background-half-2 {
+        width: 400px;
+    }
 }
 
 .landing-page-heading {
@@ -223,12 +233,15 @@ body {
 
 /* Media Query Footer */
 
-@media screen and (max-width: 1000px) {
-    .footer-container {
-        margin-left: -15vh;
+@media screen and (min-width: 980px) {
+    .footer-nav {
+        display: none;
     }
+}
+
+@media screen and (max-width: 980px) {
     .footer {
-        width: 100vh;
+        display: none !important;
     }
 }
 
@@ -274,9 +287,16 @@ body {
     text-decoration: underline;
 }
 
+/* Mobile Footer */
+
+    .footer-mobile {
+        height: 25vh;
+        width: -webkit-fill-available;
+    }
+
 /* Media Query */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 980px) {
     .landing-page-heading-container {
         margin-left: 35px;
     }
@@ -544,7 +564,7 @@ input[type=submit]:hover {
 
 /* Partners Media Query */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 980px) {
     .partners-container {
         margin-top: 10vh;
     }
