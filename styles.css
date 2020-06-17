@@ -290,8 +290,44 @@ body {
 /* Mobile Footer */
 
     .footer-mobile {
-        height: 25vh;
+        height: 28vh;
         width: -webkit-fill-available;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer-social-link {
+        width: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .footer-mobile-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer-header {
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-copyright {
+        color: #404040;
+        font-size: 15px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-mobile-link {
+        color: #404040 !important;
     }
 
 /* Media Query */
