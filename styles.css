@@ -225,7 +225,7 @@ body {
 
 /* Media Query Footer */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 958px) {
     .footer-container {
         margin-left: -15vh;
     }
