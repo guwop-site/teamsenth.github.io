@@ -221,19 +221,22 @@ body {
     filter: drop-shadow(0px 0px 5px #222);
 }
 
-.footer {
-    width: 100vh;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-}
-
 /* Media Query Footer */
 
 @media screen and (max-width: 1000px) {
     .footer-container {
         margin-left: -15vh;
     }
+    .footer {
+        width: 100vh;
+    }
+}
+
+.footer {
+    width: 100vh;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-container{
