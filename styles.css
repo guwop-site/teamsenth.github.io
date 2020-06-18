@@ -648,6 +648,7 @@ input[type=submit]:hover {
 }
 
 .call-to-action-button {
+  justify-content: right;
   background-color: #000;
   color: #fff;
   padding: 15px 32px;
