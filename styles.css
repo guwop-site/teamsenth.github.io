@@ -636,8 +636,8 @@ input[type=submit]:hover {
   position: absolute;
   top:0;
   left: 0;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
 }
 
 .call-to-action-section {
@@ -645,6 +645,12 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+}
+
+.call-to-action-hero {
+    justify-content: left;
+    margin-right: 100px;
 }
 
 .call-to-action-button {
@@ -668,4 +674,15 @@ input[type=submit]:hover {
 
 .call-to-action-heading {
     font-size: 30px;
+}
+
+/* Call To Action Media Query */
+
+@media screen and (max-width: 980px) {
+    .call-to-action-section {
+        flex-direction: column;
+    }
+    .call-to-action-hero {
+        margin-right: 0px;
+    }
 }
