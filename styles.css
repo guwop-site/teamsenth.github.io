@@ -631,6 +631,7 @@ input[type=submit]:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 100px;
 }
 .iframe-container iframe{
   position: absolute;
@@ -641,7 +642,7 @@ input[type=submit]:hover {
 }
 
 .call-to-action-section {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -676,14 +677,46 @@ input[type=submit]:hover {
     font-size: 30px;
 }
 
+.call-to-action-button-text {
+    color: #fff;
+    text-decoration: none;
+}
+
 /* Call To Action Media Query */
 
 @media screen and (max-width: 980px) {
     .call-to-action-section {
         flex-direction: column;
+        height: 100vh;
     }
     .call-to-action-hero {
         margin-right: 0px;
         padding: 20px;
     }
+}
+
+.about-us-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.about-us-heading {
+    margin-top: 150px;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.about-us-paragraph {
+    font-size: 20px;
 }
