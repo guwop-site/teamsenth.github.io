@@ -684,5 +684,6 @@ input[type=submit]:hover {
     }
     .call-to-action-hero {
         margin-right: 0px;
+        padding: 20px;
     }
 }
