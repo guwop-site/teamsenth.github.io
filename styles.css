@@ -498,8 +498,8 @@ input[type=submit] {
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
+  clip-path:  polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px));
 }
 
 input[type=submit]:hover {
@@ -614,4 +614,57 @@ input[type=submit]:hover {
 
 .page-paragraph {
     font-size: 15px;
+}
+
+.featured-content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.iframe-container{
+  position: relative;
+  width: 80%;
+  padding-bottom: 56.25%; 
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+}
+
+.call-to-action-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-button {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  clip-path:  polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px));
+}
+
+.call-to-action-button:hover{
+    background-color: #404040;
+    color: #fff;
+}
+
+.call-to-action-heading {
+    font-size: 30px;
 }
