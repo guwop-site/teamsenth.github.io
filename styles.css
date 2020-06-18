@@ -27,7 +27,7 @@ body {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: black;
     width: 100%;
     height: 70px;
     padding-top: 25px;
@@ -50,7 +50,7 @@ body {
 }
 .nav-link {
     margin: 15px;
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
@@ -73,7 +73,7 @@ body {
     justify-content: center;
     align-items: center;
     list-style: none;
-    color: black;
+    color: white;
     flex-direction: row;
     text-align: center;
     margin-left:25px;
@@ -82,7 +82,7 @@ body {
 
 .nav-link-mobile {
     padding-right: 40px;
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 12px;
@@ -109,6 +109,12 @@ body {
         width: device-width;
     }
     .nav {
+        display: none;
+    }
+    .logo-image {
+        display: none;
+    }
+    .logo {
         display: none;
     }
 
@@ -294,8 +300,16 @@ body {
     animation-name: shop;
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0,.75,0,1);
-    margin-left: 15px;
-    margin-right: 15px;
+    background: rgb(4,213,255);
+    background: linear-gradient(0deg, rgba(4,213,255,1) 0%, rgba(255,255,255,1) 40%);
+}
+
+.shop-container {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .shop-heading {
@@ -378,6 +392,20 @@ body {
 @keyframes shop {
     0% {opacity: .2; margin-top: 5vh}
     100% {opacity: 1; margin-top: 0vh}
+}
+
+/* Store Media Query */
+
+@media screen and (max-width: 980px) {
+    .shop-heading {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .shop-paragraph {
+        font-size: 25px;
+        text-align: center;
+    }
 }
 
 /* Contact Page */
