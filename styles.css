@@ -730,6 +730,14 @@ input[type=submit]:hover {
 .about-us-heading {
     font-weight: 600;
     font-size: 45px;
+    animation-name: about-us-heading;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,.75,0,1);
+}
+
+@keyframes about-us-heading {
+    0% {opacity: .3; margin-top: 25vh;}
+    100$ {opacity: 1; margin-top: 0vh}
 }
 
 .about-us-image {
@@ -804,7 +812,8 @@ input[type=submit]:hover {
 }
 
 .team-section {
-    height: 100vh;
+    margin-top: 25vh;
+    margin-bottom: 15vh;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -815,6 +824,14 @@ input[type=submit]:hover {
     font-size: 30px;
     font-weight: 600;
     text-align: center;
+    animation-name: team-page-heading;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,.75,0,1);
+}
+
+@keyframes team-page-heading {
+    0% {opacity: .1; margin-top: 25vh;}
+    100% {opacity: 1; margin-top: 0vh}
 }
 
 .team-roster-heading {
@@ -834,11 +851,12 @@ input[type=submit]:hover {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin: 15px;
 }
 
 .team-list-image {
-border-radius: 50%;
-width: 100px;
+    border-radius: 50%;
+    width: 100px;
 }
 
 .team-list-player-info-wrapper {
@@ -856,4 +874,5 @@ width: 100px;
 
 .team-list-instagram {
     width: 30px;
+    margin-top: 5px;
 }
