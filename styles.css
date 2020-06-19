@@ -756,3 +756,37 @@ input[type=submit]:hover {
 .about-us-paragraph {
     font-size: 20px;
 }
+
+.about-us-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 80px;
+}
+
+.about-us-stats-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.about-us-stats-heading {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+.about-us-stats-subtitle {
+    text-align: center;
+    font-size: 25px;
+}
+
+.about-us-stats-footnote {
+    margin-top: 20px;
+    color: #6b6b6b;
+    margin-bottom: 20px;
+}
