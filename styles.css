@@ -629,7 +629,7 @@ input[type=submit]:hover {
 }
 
 .iframe-container{
-  position: relative;
+    position: absolute;
   width: 80%;
   padding-bottom: 46%; 
   height: 0;
@@ -644,6 +644,14 @@ input[type=submit]:hover {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* Featured Content Media Query */
+
+@media screen and (max-width: 980px) {
+    .featured-content-section {
+        height: 30vh;
+    }
 }
 
 .call-to-action-section {
