@@ -502,6 +502,9 @@ input[type=submit] {
   font-size: 20px;
   text-align: center;
   clip-path:  polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px));
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input[type=submit]:hover {
