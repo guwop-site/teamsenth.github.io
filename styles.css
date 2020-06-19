@@ -658,7 +658,7 @@ input[type=submit]:hover {
   justify-content: right;
   background-color: #000;
   color: #fff;
-  padding: 15px 32px;
+  padding: 10px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -680,6 +680,8 @@ input[type=submit]:hover {
 .call-to-action-button-text {
     color: #fff !important;
     text-decoration: none !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* Call To Action Media Query */
@@ -696,10 +698,11 @@ input[type=submit]:hover {
 }
 
 .about-us-section {
-    height: 100vh;
+    margin-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .about-us-container {
@@ -714,6 +717,11 @@ input[type=submit]:hover {
 .about-us-heading {
     font-weight: 600;
     font-size: 45px;
+}
+
+.about-us-image {
+    width: 100%;
+    padding: 30px;
 }
 
 .about-us-paragraph {
