@@ -499,6 +499,8 @@ input[type=submit] {
   padding: 12px 20px;
   border: none;
   cursor: pointer;
+  font-size: 20px;
+  text-align: center;
   clip-path:  polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px));
 }
 
