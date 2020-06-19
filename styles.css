@@ -820,3 +820,40 @@ input[type=submit]:hover {
 .team-roster-heading {
     font-size: 25px;
 }
+
+.team-list-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.team-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.team-list-image {
+border-radius: 50%;
+width: 100px;
+}
+
+.team-list-player-info-wrapper {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.team-list-name {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.team-list-instagram {
+    width: 30px;
+}
