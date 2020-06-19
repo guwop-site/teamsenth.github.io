@@ -114,7 +114,7 @@ body {
 
 /* Mobile Menu Media Query */
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 981px) {
     .nav-mobile {
         display: none;
     }
@@ -722,8 +722,35 @@ input[type=submit]:hover {
 }
 
 .about-us-image {
-    width: 100%;
+    width: 30%;
     padding: 30px;
+}
+
+.about-us-image-mobile {
+    width: 60%;
+    padding: 30px;
+}
+
+.about-us-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 981px) {
+    .about-us-image-mobile {
+        display: none;
+    }
+    .about-us-image-container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .about-us-image {
+        display: none;
+    }
 }
 
 .about-us-paragraph {
