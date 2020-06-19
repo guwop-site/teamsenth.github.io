@@ -802,3 +802,21 @@ input[type=submit]:hover {
     color: #6b6b6b;
     margin-bottom: 20px;
 }
+
+.team-section {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-page-heading {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.team-roster-heading {
+    font-size: 25px;
+}
