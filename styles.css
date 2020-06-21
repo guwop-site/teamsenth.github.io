@@ -836,6 +836,7 @@ input[type=submit]:hover {
 
 .team-roster-heading {
     font-size: 25px;
+        margin-top: 30px;
 }
 
 .team-list-container {
@@ -875,4 +876,8 @@ input[type=submit]:hover {
 .team-list-instagram {
     width: 30px;
     margin-top: 5px;
+}
+
+.home-carousel-section {
+    height: 100vh;
 }
