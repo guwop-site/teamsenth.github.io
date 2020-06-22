@@ -541,7 +541,6 @@ input[type=submit]:hover {
 }
 
 .partners-section {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -549,6 +548,9 @@ input[type=submit]:hover {
     animation-name: partners;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0,.75,0,1);
+    flex-direction: column;
+    padding: 100px;
+    padding-top: 150px;
 }
 
 .partners-arma {
