@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="styles.css">
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="count-up.js"></script>
+    <script type="text/javascript">
+        $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
+    </script>
     <title>About Us | Team Senth</title>
 </head>
 <body>
@@ -42,11 +49,11 @@
         </div>
         <div class="about-us-stats">
         <div class="about-us-stats-card">
-            <a class="counter" data-target="37">0</a>
+            <span class="countup" cup-end="37" cup-duration="2000" cup-append=""></span>
             <a class="about-us-stats-subtitle">Power Ranking in EU</a>
         </div>
             <div class="about-us-stats-card">
-            <span class="counter" data-target="3500">0</span>
+            <span class="countup" cup-end="3500" cup-duration="2000" cup-append=""></span>
             <a class="about-us-stats-subtitle">Total Followers</a>
         </div>
     </div>
@@ -80,6 +87,21 @@
 
 </div>
 </section>  
+<!-- 
+  <script src="counter.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script> -->
+
+<script>
+
+var cu = new counterUp({
+    start: 0,   
+    duration: 1000,
+    intvalues: true,
+    interval: 100,
+});
+cu.start();
+
+</script>
 </body>
-    <script src="counter.js"></script>
 </html>
