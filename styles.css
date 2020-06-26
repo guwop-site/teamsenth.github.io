@@ -852,35 +852,33 @@ input[type=submit]:hover {
 
 .team-list-item {
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     margin: 15px;
 }
 
 .team-list-image {
-    border-radius: 50%;
-    width: 100px;
+    width: 300px;
 }
 
 .team-list-player-info-wrapper {
     display: flex;
-    align-items: left;
+    align-items: center;
     justify-content: left;
-    flex-direction: column;
-    margin-left: 30px;
+    flex-direction: row;
+    margin-top: -40px;
+    margin-left: 10px;
 }
 
 .team-list-name {
     font-weight: 600;
     font-size: 20px;
+    color: #fff;
 }
 
 .team-list-instagram {
-    width: 30px;
+    width: 25px;
     margin-top: 5px;
-}
-
-.home-carousel-section {
-    height: 100vh;
+    margin-left: 15px;
 }
