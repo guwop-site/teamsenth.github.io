@@ -856,6 +856,13 @@ input[type=submit]:hover {
     justify-content: center;
     flex-direction: column;
     margin: 15px;
+    transition: 1s;
+}
+
+.team-list-item:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0 0 2px #000;
 }
 
 .team-list-image {
