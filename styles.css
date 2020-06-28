@@ -889,3 +889,45 @@ input[type=submit]:hover {
     margin-top: 5px;
     margin-left: 15px;
 }
+
+
+.link-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.link-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.link-page-image {
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+.links-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.links-page-link {
+    color: #fff;
+    text-align: center;
+    width: 80vw;
+    margin: 5px;
+    clip-path:  polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px));
+    padding: 15px;
+    background-color: #000;
+}
