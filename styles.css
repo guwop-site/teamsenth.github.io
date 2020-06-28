@@ -899,6 +899,9 @@ input[type=submit]:hover {
     flex-direction: column;
     margin-left: 5px;
     margin-right: 5px;
+    animation-name: links;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,.75,0,1);
 }
 
 .link-section-header {
@@ -930,4 +933,19 @@ input[type=submit]:hover {
     clip-path:  polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px));
     padding: 15px;
     background-color: #000;
+}
+
+/* Animation */
+
+@keyframes links {
+    0% {opacity: .1; margin-top: 5vh;}
+    100% {opacity: 1; margin-top: 0vh;}
+}
+
+/* Links Media Query */
+
+@media screen and (min-width: 981px) {
+    .links-page-link {
+        width: 100vh;
+    }
 }
