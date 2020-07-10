@@ -856,6 +856,7 @@ input[type=submit]:hover {
     justify-content: center;
     flex-direction: column;
     margin: 15px;
+    padding: 10px 10px 10px 10px;
     transition: 1s;
 }
 
@@ -874,20 +875,22 @@ input[type=submit]:hover {
     align-items: center;
     justify-content: left;
     flex-direction: row;
-    margin-top: -40px;
+    margin-top: -10px;
     margin-left: 10px;
 }
 
 .team-list-name {
     font-weight: 600;
     font-size: 20px;
-    color: #fff;
+    color: #000;
+    text-shadow: 0 0 5px #fff;
 }
 
 .team-list-instagram {
     width: 25px;
     margin-top: 5px;
     margin-left: 15px;
+    filter: drop-shadow(0px 0px 5px #fff);
 }
 
 
