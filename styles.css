@@ -323,8 +323,7 @@ body {
     animation-name: shop;
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0,.75,0,1);
-    background: rgb(4,213,255);
-    background: linear-gradient(0deg, rgba(4,213,255,1) 0%, rgba(255,255,255,1) 40%);
+    background: #fff;
 }
 
 .shop-container {
@@ -882,7 +881,7 @@ input[type=submit]:hover {
 .team-list-name {
     font-weight: 600;
     font-size: 20px;
-    text-shadow: 0 0 5px #fff;
+    color: #000;
 }
 
 .team-list-instagram {
@@ -950,4 +949,47 @@ input[type=submit]:hover {
     .links-page-link {
         width: 100vh;
     }
+}
+
+/* Shop */
+
+.shop-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.merch-card {
+    width: 240px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 5px #c4c4c4;
+    padding: 25px;
+    margin-top: 60px;
+}
+
+.merch-image {
+    width: 200px;
+}
+
+.merch-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.merch-price {
+    font-size: 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.merch-info {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    width: 100%;
 }
