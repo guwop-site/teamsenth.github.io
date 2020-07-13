@@ -155,7 +155,7 @@ body {
     margin-top: -100vh;
     height: 100vh;
     width: -webkit-fill-available;
-    background-image: url(Images/Background.svg);
+    background: #2e2e2e;
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
@@ -315,7 +315,7 @@ body {
 /* Shop */
 
 .shop {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,6 +324,7 @@ body {
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0,.75,0,1);
     background: #fff;
+    margin: 10vh 0 20px 0;
 }
 
 .shop-container {
@@ -412,8 +413,8 @@ body {
 /* Shop Animation */
 
 @keyframes shop {
-    0% {opacity: .2; margin-top: 5vh}
-    100% {opacity: 1; margin-top: 0vh}
+    0% {opacity: .2; margin-top: 15vh}
+    100% {opacity: 1; margin-top: 10vh}
 }
 
 /* Store Media Query */
@@ -748,7 +749,7 @@ input[type=submit]:hover {
 }
 
 .about-us-image-mobile {
-    width: 60%;
+    width: 100%;
     padding: 30px;
 }
 
@@ -956,6 +957,7 @@ input[type=submit]:hover {
 .shop-title {
     font-size: 30px;
     font-weight: 600;
+    margin-top: 60px;
 }
 
 .merch-card {
@@ -968,6 +970,16 @@ input[type=submit]:hover {
     box-shadow: 0 0 5px #c4c4c4;
     padding: 25px;
     margin-top: 60px;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0,.75,0,1);
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 371px;
+}
+
+.merch-card:hover {
+    transform: scale(1.1,1.1);
+    z-index: 1;
 }
 
 .merch-image {
@@ -992,4 +1004,20 @@ input[type=submit]:hover {
     justify-content: left;
     flex-direction: column;
     width: 100%;
+}
+
+.shop-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1280px) {
+    .shop-container {
+        flex-direction: column;
+    }
+    .merch-card {
+        margin-top: 20px;
+    }
 }
