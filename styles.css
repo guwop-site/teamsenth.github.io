@@ -328,6 +328,7 @@ body {
     animation-timing-function: cubic-bezier(0,.75,0,1);
     background: #fff;
     margin: 10vh 0 20px 0;
+    text-decoration: none;
 }
 
 .shop-container {
@@ -978,6 +979,7 @@ input[type=submit]:hover {
     margin-left: 10px;
     margin-right: 10px;
     height: 371px;
+    text-decoration: none;
 }
 
 .merch-card:hover {
@@ -993,12 +995,16 @@ input[type=submit]:hover {
     font-weight: 600;
     font-size: 18px;
     margin-bottom: 3px;
+    color: #000;
+    text-decoration: none;
 }
 
 .merch-price {
     font-size: 16px;
     margin-top: 3px;
     margin-bottom: 3px;
+    color: #000;
+    text-decoration: none;
 }
 
 .merch-info {
@@ -1007,20 +1013,41 @@ input[type=submit]:hover {
     justify-content: left;
     flex-direction: column;
     width: 100%;
+    text-decoration: none;
 }
 
 .shop-container {
     display: flex;
     flex-direction: row;
+    text-decoration: none;
+    flex-wrap: wrap;
+    margin: 0 25px 0 25px;
+}
+
+.shop-promo {
+    width: 70vw;
+    margin: 10vh 25px 0 25px;
+    border: 2px solid black;
 }
 
 /* Media Query */
 
 @media screen and (max-width: 1280px) {
-    .shop-container {
-        flex-direction: column;
-    }
-    .merch-card {
-        margin-top: 20px;
-    }
+        .merch-card {
+            margin-top: 20px;
+        }
+        .shop-container {
+            margin: 0 15px 0 15px;
+        }
+
+        .shop-title {
+            margin-top: 15vh
+        }
+}
+
+@media screen and (max-width: 994px) {
+        .shop-container {
+                align-items: center;
+                justify-content: center;
+        }
 }
