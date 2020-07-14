@@ -34,6 +34,15 @@
 <section class="shop">
     <a class="shop-title">Shop</a>
     <div class="shop-container">
+    <a style="text-decoration: none;" href="https://arma.gg/collections/senth/products/senth-elite-jersey">
+        <div class="merch-card">
+            <img class="merch-image" src="Images/Merch/Pro Jersey.png">
+            <div class="merch-info">
+                <p class="merch-title">Senth Jersey</p>
+                <p class="merch-price">$49.99 USD</p>
+            </div>
+        </div>
+    </a>
     <a style="text-decoration: none;" href="https://arma.gg/collections/senth/products/senth-text-hoodie-grey">
         <div class="merch-card">
             <img class="merch-image" src="Images/Merch/Senth Hoodie 1.png">
@@ -71,9 +80,15 @@
         </div>
     </a>
     </div>
-    <video class="shop-promo" autoplay loop> 
-        <source src="Images/Shop Promo.mp4" type="video/mp4">
+    <video class="shop-promo" autoplay loop muted playsinline id="myvideo"> 
+        <source src="Images/Shop Promo.mp4" type="video/mp4">           
     </video>
+    <audio loop autoplay>
+        <source src="Images/Shop Promo.mp3" type="audio/mpeg">
+        </audio>
+
+        <iframe src="Images/Shop Promo.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe> 
 </section>
 
 <!-- Footer -->
